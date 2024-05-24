@@ -9,8 +9,8 @@ export default function Navigation() {
 
   return (
     <nav className="navigation p-3 d-flex flex-column justify-content-evenly">
-      {navs.map((nav) => (
-        <li className="p-1">
+      {navs.map((nav, idx) => (
+        <li className="p-1" key={idx}>
           <a href={nav.link} className="fw-bold fs-6">
             {nav.logo}
             {nav.value}
