@@ -5,9 +5,9 @@ import { TokenProvider } from './contexts/TokenContext.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <TokenProvider>
       <App />
     </TokenProvider>
-  </React.StrictMode>,
+  // </React.StrictMode>,
 )
