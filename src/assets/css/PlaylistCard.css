@@ -1,0 +1,44 @@
+.playlist_card {
+  width: 15rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.playlist_card:hover {
+  background-color: #4d4d4d33;
+}
+
+.playlist_card p {
+  color: var(--text-color);
+  line-height: 1.1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.playlist_cover {
+  position: relative;
+}
+
+.playlist_img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 0.4rem;
+}
+
+.play_btn {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  background-color: #1fdf64;
+  box-shadow: 2px 13px 29px -5px rgba(29, 29, 29, 1);
+  animation: showPlayBtn 0.1s ease-in;
+}
+@keyframes showPlayBtn {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 3%;
+  }
+}

@@ -1,0 +1,8 @@
+.global_box {
+  height: 80%;
+  overflow-y: auto;
+}
+.featured_playlists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

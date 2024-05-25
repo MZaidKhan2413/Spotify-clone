@@ -1,0 +1,16 @@
+.sidebar {
+  height: 87%;
+}
+.navigation,
+.library {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 0.5rem;
+}
+.navigation {
+  height: 20%;
+}
+.library {
+  height: 78.5%;
+  overflow-y: auto;
+}

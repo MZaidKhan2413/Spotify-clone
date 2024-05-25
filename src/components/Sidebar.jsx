@@ -1,5 +1,6 @@
 import Navigation from "./Navigation"
 import Library from "./Library"
+import "../assets/css/Sidebar.css"
 
 export default function Sidebar() {
     return (

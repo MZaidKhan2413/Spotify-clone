@@ -1,3 +1,4 @@
+import "../assets/css/PlaylistCard.css"
 import { useState } from "react";
 import truncateDescription from "../utils/truncateDescription.js";
 import { FaPlay } from "react-icons/fa";
