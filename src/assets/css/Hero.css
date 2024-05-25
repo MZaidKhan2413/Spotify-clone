@@ -11,3 +11,27 @@
 .hero_head {
   height: 20%;
 }
+
+.nav-icons {
+  color: #080808;
+  font-size: 2.5rem;
+}
+
+.nav-btns:nth-child(1){
+  background: #fff;
+  color: #000;
+}
+.nav-btns:nth-child(2){
+  background: #000;
+  color: #fff;
+}
+.nav-btns:nth-child(3){
+  width: 2rem !important;
+  height: 2rem !important;
+  background-color: #080808;
+}
+.nav-btns:nth-child(4){
+  width: 12rem !important;
+  height: 2rem !important;
+  background-color: #080808;
+}
