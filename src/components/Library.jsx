@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { BiLibrary } from "react-icons/bi";
 import { TokenContext } from "../contexts/TokenContext";
 import { SpotifyContext } from "../contexts/SpotifyContext";
+import UserPlaylist from "./UserPlaylist";
 import axios from "axios";
 
 export default function Library() {
@@ -14,11 +15,10 @@ export default function Library() {
                     Authorization: "Bearer "+token,
                 }
             })
-
-            const userPlaylists = response.data.items.map(({name, id})=>{
-                return {name, id};
+            const userPlaylists = response.data.items.map(({name, id, images, owner})=>{
+                return {name, id, images: images[0].url, owner: owner.display_name};
             });
-            
+
             setMusicData((prevData) => ({
                 ...prevData,
                 userPlaylists,
@@ -29,14 +29,12 @@ export default function Library() {
     }, [token, setMusicData])
 
     return (
-        <div className="library p-3 ps-4">
-            <BiLibrary className="fs-4 me-3"/>
+        <div className="library py-3 pe-3">
+            <BiLibrary className="fs-4 me-3 ms-4"/>
             <h6 className="fw-boler d-inline">Your Library</h6>
             <div className="playlists pt-4">
-                {musicData.userPlaylists && musicData.userPlaylists.map((playlist, idx)=>(
-                    <li className="py-1 fw-bold" key={idx}>
-                        {playlist.name}
-                    </li>
+                {musicData.userPlaylists && musicData.userPlaylists.map((playlist)=>(
+                    <UserPlaylist key={playlist.id} playlist={playlist} />
                 ))}
             </div>
         </div>

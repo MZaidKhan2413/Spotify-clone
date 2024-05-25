@@ -1,0 +1,17 @@
+.userPlaylist {
+    cursor: pointer;
+}
+.userPlaylist:hover {
+    background-color: #312e2e5e;
+    border-radius: .4rem;
+}
+
+.user-pl-img {
+    width: 3.2rem;
+    aspect-ratio: 1/1;
+    border-radius: .4rem;
+}
+
+.user-pl-info h6 {
+    color: #fff;
+}
