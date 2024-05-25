@@ -19,9 +19,9 @@ export default function Library() {
                 return {name, id};
             });
             
-            setMusicData(() => ({
-                ...musicData,
-                userPlaylists: userPlaylists
+            setMusicData((prevData) => ({
+                ...prevData,
+                userPlaylists,
             }));
 
         }
