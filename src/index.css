@@ -46,3 +46,10 @@ li {
   background-color: #000;
   position: relative;
 }
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #5d5c5c;
+}
