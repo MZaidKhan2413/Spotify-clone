@@ -6,6 +6,7 @@ export function SpotifyProvider({children}) {
     const [musicData, setMusicData] = useState({
         userPlaylists: null,
         featuredPlaylists: null,
+        currentTrackState: null
     });
     const providerValue = {musicData, setMusicData}
     return(
