@@ -8,3 +8,7 @@
 .controls .fs-1 {
   color: #fff;
 }
+
+#volume {
+  width: 10rem;
+}

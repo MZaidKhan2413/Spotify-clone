@@ -35,3 +35,9 @@
   height: 2rem !important;
   background-color: #080808;
 }
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 100% !important;
+  }
+}

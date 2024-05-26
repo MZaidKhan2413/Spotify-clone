@@ -9,19 +9,13 @@
 
 @media screen and (max-width: 992px) {
   .featured_playlists {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     font-size: 90%;
   }
 }
 @media screen and (max-width: 768px) {
   .featured_playlists {
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 80%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .featured_playlists {
     grid-template-columns: repeat(2, 1fr);
-    font-size: 70%;
+    font-size: 80%;
   }
 }
