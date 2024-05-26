@@ -34,7 +34,7 @@ export default function Library() {
             <h6 className="fw-boler d-inline">Your Library</h6>
             <div className="playlists pt-4">
                 {musicData.userPlaylists && musicData.userPlaylists.map((playlist)=>(
-                    <UserPlaylist key={playlist.id} playlist={playlist} />
+                    <UserPlaylist key={playlist.id} image={playlist.images} name={playlist.name} artist={playlist.owner} />
                 ))}
             </div>
         </div>
