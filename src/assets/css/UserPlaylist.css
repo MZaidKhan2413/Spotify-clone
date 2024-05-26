@@ -15,3 +15,6 @@
 .user-pl-info h6 {
     color: #fff;
 }
+.user-pl-info p {
+    font-size: .8rem !important;
+}
