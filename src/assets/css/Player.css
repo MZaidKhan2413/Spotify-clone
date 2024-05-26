@@ -1,3 +1,10 @@
 .player {
   height: 13%;
 }
+
+.controls {
+  color: var(--text-color);
+}
+.controls .fs-1 {
+  color: #fff;
+}
