@@ -8,6 +8,14 @@
   height: 87%;
   border-radius: 0.5rem;
 }
+.search {
+  border: 2px solid white;
+}
+.search input {
+  all: unset;
+  height: 2.5rem;
+  width: 20rem;
+}
 
 .nav-btns:nth-child(1){
   background: #fff;
@@ -24,7 +32,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero {
+  .hero, .search, .search > input {
     width: 100% !important;
   }
 }
