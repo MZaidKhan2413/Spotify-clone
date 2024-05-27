@@ -4,44 +4,12 @@ import { GiNextButton, GiPreviousButton } from "react-icons/gi";
 import { MdOutlinePlayCircleFilled, MdOutlinePauseCircleFilled } from "react-icons/md";
 import { RxSpeakerLoud } from "react-icons/rx";
 import { BiRepeat } from "react-icons/bi";
-import { TokenContext } from "../contexts/TokenContext";
 import { SpotifyContext } from "../contexts/SpotifyContext";
-import { useContext, useEffect } from "react";
-import axios from "axios";
+import { useContext } from "react";
 import UserPlaylist from "./UserPlaylist";
-import convertTime from "../utils/convertTime.js";
 
 export default function Player() {
-  const {token} = useContext(TokenContext);
-  const {musicData, setMusicData} = useContext(SpotifyContext);
-
-  useEffect(()=>{
-    async function currentTrackState() {
-      const stateRes = await axios.get("https://api.spotify.com/v1/me/player", {
-        headers: {
-          Authorization: "Bearer "+token,
-          "Content-Type": "application/json"
-        }
-      })
-      const {is_playing, item, progress_ms, timestamp} = stateRes.data;
-      const currentTrackState = {
-        is_playing,
-        // progress_ms,
-        // timestamp,
-        duration_ms: convertTime(item.duration_ms),
-        images: item.album.images[0].url,
-        artists: item.album.artists.map((artist)=>(artist.name)),
-        name: item.name,
-        id: item.id,
-      }
-      setMusicData(prevData=>({
-        ...prevData, currentTrackState
-      }))
-    }
-    currentTrackState()
-  }, [token, setMusicData, musicData.currentTrackState])
-
-
+  const {musicData} = useContext(SpotifyContext);
 
   return (
     <section className="player w-100 position-absolute bottom-0 d-flex align-items-center row">
@@ -58,7 +26,7 @@ export default function Player() {
             musicData.currentTrackState &&
             musicData.currentTrackState.is_playing ? 
             <MdOutlinePauseCircleFilled className="fs-1 mx-2" /> :
-            <MdOutlinePlayCircleFilled className="fs-1 mx-2" onClick={()=>handlePlayerControl("play")}/>
+            <MdOutlinePlayCircleFilled className="fs-1 mx-2" />
           }
           <GiNextButton className="mx-2" />
           <BiRepeat className="mx-2" />

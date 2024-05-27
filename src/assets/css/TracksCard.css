@@ -1,23 +1,23 @@
-.playlist_card {
+.tracks_card {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.playlist_card:hover {
+.tracks_card:hover {
   background-color: #4d4d4d33;
 }
 
-.playlist_card p {
+.tracks_card p {
   color: var(--text-color);
   line-height: 1.1rem;
   font-weight: 500;
   font-size: 0.9rem;
 }
 
-.playlist_cover {
+.tracks_cover {
   position: relative;
 }
 
-.playlist_img {
+.tracks_img {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 0.4rem;

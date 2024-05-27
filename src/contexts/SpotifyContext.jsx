@@ -5,8 +5,8 @@ export const SpotifyContext = createContext();
 export function SpotifyProvider({children}) {
     const [musicData, setMusicData] = useState({
         userPlaylists: null,
-        featuredPlaylists: null,
-        currentTrackState: null
+        playlists: null,
+        currentTrackState: null,
     });
     const providerValue = {musicData, setMusicData}
     return(
