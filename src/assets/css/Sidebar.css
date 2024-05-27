@@ -14,3 +14,7 @@
   height: 78.5%;
   overflow-y: auto;
 }
+
+.active {
+  color: #fff;
+}
