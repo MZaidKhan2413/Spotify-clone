@@ -42,7 +42,7 @@ export default function HeroHead() {
                     <button onClick={serachTrack} className="btn p-0 text-light fs-4 fw-bold"><IoSearchOutline /></button>
                     <input type="text" value={searchValue} onChange={handleOnChange} onKeyDown={handleKeyDown} className="px-3" placeholder="What do you want to play ?"/>
                 </div>
-                <div className="d-md-flex d-none align-items-center gap-2">
+                <div className="d-lg-flex d-none align-items-center gap-2">
                     <a className="nav-btns px-3 py-1 rounded-pill" href="https://open.spotify.com/premium" target="_blank">Explore Premium</a>
                     <span className="nav-btns px-3 py-1 rounded-pill"><IoArrowDownCircleOutline />Install App</span>
                     <FaRegBell className="nav-btns p-2 rounded-circle" />
