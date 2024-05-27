@@ -22,7 +22,7 @@ export default function GlobalBox() {
                     tracksURL: item.tracks.href,
                 }
             })
-            await setMusicData((prevData) => ({
+            setMusicData((prevData) => ({
                 ...prevData,
                 playlists,
             }));
