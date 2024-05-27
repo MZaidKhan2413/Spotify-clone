@@ -1,0 +1,21 @@
+footer {
+  color: #fff;
+  border-radius: .5rem;
+}
+
+footer h5 {
+  color: #fff;
+}
+
+footer .nav-link {
+  padding: 0;
+}
+
+footer .nav-link:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+footer .border-top {
+  border-top: 1px solid #333;
+}

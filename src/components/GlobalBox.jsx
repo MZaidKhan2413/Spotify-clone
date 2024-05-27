@@ -4,6 +4,7 @@ import { useContext, useEffect } from "react"
 import { TokenContext } from "../contexts/TokenContext";
 import { SpotifyContext } from "../contexts/SpotifyContext";
 import TracksList from "./TracksList";
+import Footer from "./footer/Footer";
 
 export default function GlobalBox() {
     const {token} = useContext(TokenContext);
@@ -35,6 +36,7 @@ export default function GlobalBox() {
             {musicData.playlists.map(playlist => (
                 <TracksList playlist={playlist} key={playlist.id}/>
             ))}
+            <Footer/>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import { useContext, useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { SpotifyProvider } from "./contexts/SpotifyContext";
 import { TokenContext } from "./contexts/TokenContext";
 import Wrapper from './components/Wrapper';
