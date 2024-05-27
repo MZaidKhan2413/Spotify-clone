@@ -17,8 +17,6 @@ export default function TracksCard({ data }) {
     function handleOnClick() {
         const currentTrackState = {
             is_playing: true,
-            // progress_ms,
-            // timestamp,
             duration_ms: data.duration_ms,
             images: data.image,
             artists: data.artists,
@@ -44,7 +42,7 @@ export default function TracksCard({ data }) {
             </div>
             <h6 className="pt-2">{truncateDescription(data.name, 25)}</h6>
             <p className="pe-4">
-                {data.artists.join(", ")}
+                {truncateDescription(data.artists.join(", "), 45)}
             </p>
         </div>
     );

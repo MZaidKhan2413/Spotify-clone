@@ -8,14 +8,6 @@
   height: 87%;
   border-radius: 0.5rem;
 }
-.hero_head {
-  height: 20%;
-}
-
-.nav-icons {
-  color: #080808;
-  font-size: 2.5rem;
-}
 
 .nav-btns:nth-child(1){
   background: #fff;
@@ -27,11 +19,6 @@
 }
 .nav-btns:nth-child(3){
   width: 2rem !important;
-  height: 2rem !important;
-  background-color: #080808;
-}
-.nav-btns:nth-child(4){
-  width: 12rem !important;
   height: 2rem !important;
   background-color: #080808;
 }

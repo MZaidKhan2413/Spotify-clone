@@ -32,7 +32,6 @@ export default function GlobalBox() {
     
     if (musicData.playlists) return (
         <div className="global_box p-3">
-            <audio src={musicData.currentTrackState && musicData.currentTrackState.preview_url} autoPlay controls></audio>
             {musicData.playlists.map(playlist => (
                 <TracksList playlist={playlist} key={playlist.id}/>
             ))}

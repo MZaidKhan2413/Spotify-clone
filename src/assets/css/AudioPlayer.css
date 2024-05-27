@@ -1,0 +1,5 @@
+@media screen and (max-width: 768px) {
+  .play_pause .fs-1 {
+    font-size: 3rem !important;
+  }
+}
