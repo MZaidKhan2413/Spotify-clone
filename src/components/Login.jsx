@@ -4,7 +4,7 @@ import Spotify_logo_black from "../assets/Spotify_logo_black.png";
 async function getToken() {
   const API_URL = "https://accounts.spotify.com/authorize";
   const SPPOTIFY_CLIENT_ID="a6553d4fc0274795901491649192b2ac";
-  const REDIRECT_URL="http://localhost:5173/";
+  const REDIRECT_URL="https://spotify-clone-by-zaid.netlify.app";
   const scope = [
     "user-read-email",
     "user-read-private",
